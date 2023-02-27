@@ -48,7 +48,7 @@ void colussi_search(char *text, int n, char *pattern, int m)
         }
         if (j == m)
         {
-            printf("Padrão encontrado na posição %d.\n", i - m);
+            printf("Padrão encontrado na posição: %d.\n", i - m);
             j = lps[j - 1];
         }
         else if (i < n && pattern[j] != text[i])
